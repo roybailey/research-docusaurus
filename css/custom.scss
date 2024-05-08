@@ -1,0 +1,26 @@
+/**
+ * theme: {
+ *        customCss: ['./src/css/custom.scss'],
+ *      },
+ */
+
+/* media breakpoints */
+$desktop-window: "only screen and (max-width: 960px)";
+$android-window: "screen and (max-width: 800px)";
+$ipad-window: "screen and (max-width: 768px)";
+$kindle-window: "screen and (max-width: 600px)";
+$narrow-window: "screen and (max-width: 540px)";
+$iphone4-window: "screen and (max-width: 480px)";
+$iphone3-window: "screen and (max-width: 320px)";
+/* vendor prefixing */
+@mixin vendor-prefix($name, $value) {
+  // this gets messed up with we reformat
+  // @each $vendor in ('-webkit-', '-moz-', '-ms-', '-o-', '') {
+  //     #{$vendor}#{$name}: #{$value};
+  // }
+  -webkit-#{$name}: #{$value};
+  -moz-#{$name}: #{$value};
+  -ms-#{$name}: #{$value};
+  -o-#{$name}: #{$value};
+  #{$name}: #{$value};
+}

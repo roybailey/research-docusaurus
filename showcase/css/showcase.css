@@ -1,0 +1,47 @@
+
+section {
+  padding: 2em 0;
+  box-sizing: border-box;
+}
+
+.center {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+
+.module {
+  margin: 3em 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.module h1 {
+  /* default is 3rem */
+  font-size: 2rem;
+  font-style: italic;
+  color: var(--ifm-color-primary);
+}
+
+.module-footer,
+.module-header {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.module:after {
+  content: '';
+  display: block;
+  height: 0;
+  visibility: hidden;
+  clear: both;
+}
+
+.article {
+  display: inline-flex;
+  margin: 1em;
+  width: 20em;
+}
+
