@@ -1,0 +1,31 @@
+---
+hide_title: true
+hide_table_of_contents: true
+---
+
+import { Section, Panel, BarChart } from '/components/library';
+import { nonTechnicalSkills, levels, competencies } from '/docs/showcase-components/_datasets_.js';
+
+# BarChart
+
+<code>BarChart</code> shows bar charts.
+
+<Section id="bar-chart-horz">
+    <BarChart
+      display="horz"
+      sectionClass="skills_section"
+      title="Horizontal Bar"
+      subtitle="another view"
+      dataset={nonTechnicalSkills}
+      levels={levels}/>
+</Section>
+
+<Section id="bar-chart-vert">
+    <BarChart
+      display="vert"
+      sectionClass="skills_section"
+      title="Vertical Bar"
+      subtitle="and again"
+      dataset={competencies}
+      levels={levels}/>
+</Section>

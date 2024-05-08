@@ -1,0 +1,18 @@
+---
+hide_title: true
+hide_table_of_contents: true
+---
+
+import { Section, Panel, SocialMediaList } from '/components/library';
+import { social } from '/docs/showcase-components/_datasets_.js';
+
+# SocialMediaList
+
+<code>SocialMediaList</code> shows a selection of social media links with icons.
+
+<Section id="demo-services">
+    <SocialMediaList social={social}/>
+    <SocialMediaList social={social} vert='true'/>
+    <SocialMediaList social={social} vert='true' showText='true'/>
+    <SocialMediaList social={social} showText='true'/>
+</Section>

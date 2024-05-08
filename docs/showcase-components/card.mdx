@@ -1,0 +1,79 @@
+---
+hide_title: true
+hide_table_of_contents: true
+---
+
+import {
+    Section,
+    Panel,
+    Card,
+    FeedCard,
+    PhotoCard,
+    ArticleCard,
+    BusinessCard,
+} from '/components/library';
+import { articles, social } from '/docs/showcase-components/_datasets_.js';
+
+
+# Card
+
+<Section id="cards">
+
+    <div className="container">
+      <div className="row">
+        <div className="col col--4">
+
+            <Card
+                className="card-demo"
+                image={articles.articles[0].image}
+                title={articles.articles[0].title}
+                message={articles.articles[0].summary}
+                />
+
+        </div>
+        <div className="col col--4">
+
+            <FeedCard
+                className="card-demo"
+                image={articles.articles[1].image}
+                title={articles.articles[1].title}
+                avatar='/showcase/img/tm1.png'
+                author="Mickey Mouse"
+                date={articles.articles[1].date}
+                message={articles.articles[1].summary}
+                />
+
+        </div>
+        <div className="col col--4">
+
+            <PhotoCard
+                className="card-demo"
+                image={articles.articles[2].image}
+                title={articles.articles[2].title}
+                message={articles.articles[2].summary}
+                />
+
+        </div>
+      </div>
+      <div className="row">
+        <div className="col col--4">
+
+            <BusinessCard
+                className="card-demo"
+                name="Mickey Mouse"
+                title="Kids Cartoon Character"
+                avatar='/showcase/img/tm1.png'
+                address="100 Somewhere Road, Village, City, County, AB1 2CD"
+                social={social}
+                />
+
+        </div>
+      </div>
+    </div>
+
+    <hr />
+
+    <Panel className="center">
+        <ArticleCard className="card-demo" articles={articles} />
+    </Panel>
+</Section>

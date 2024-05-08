@@ -1,0 +1,28 @@
+---
+hide_title: true
+hide_table_of_contents: true
+---
+
+import { Section, Panel, ContactModule } from '/components/library';
+import { social } from '/docs/showcase-components/_datasets_.js';
+
+# ContactModule
+
+<code>ContactModule</code> shows a contact form.
+
+<Section id="demo-articles">
+  <ContactModule contact={{
+      title: "Contact us!!",
+      description: "OUR TEAM INCLUDES GREAT THINKERS, TECHNOLOGISTS AND BUSINESS MINDS.",
+      footnote: `Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation
+                  ullamco laboris nisi ut aliquip ex ea commodo`,
+      address: [
+        "info@fahem.me",
+        "south baluadanga, UK",
+        "+880174120000,+880174120000,",
+      ],
+      social: social
+  }} />
+</Section>

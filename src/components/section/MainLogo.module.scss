@@ -1,0 +1,81 @@
+//
+// ------------------------------------------------------------
+// SCSS
+// ------------------------------------------------------------
+//
+@import '../common';
+/*
+  ------------------------------------------------------------
+  LOGO
+  ------------------------------------------------------------
+*/
+.mainlogo {
+    float: left;
+    height: 100%;
+    vertical-align: middle;
+}
+.mainlogo__image {
+    float: left;
+    height: 4em;
+    width: 4em;
+    line-height: 4em;
+    vertical-align: top;
+}
+.mainlogo__image img {
+    max-height: 3em;
+    max-width: 3em;
+    min-height: 3em;
+    min-width: 3em;
+    vertical-align: middle;
+    /*float: left;*/
+}
+.mainlogo__description {
+    float: left;
+    padding: 0 1em;
+    margin: 0 auto;
+    height: 100%;
+}
+.mainlogo__description__title {
+    font-size: 150%;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+.mainlogo__description__description {
+    font-size: 50%;
+    padding: 0.25em;
+    margin: 0;
+    width: 100%;
+}
+.mainlogo__social {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width: 100%;
+}
+.mainlogo__social .social {
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+}
+.mainlogo__social li {
+    display: inline;
+    margin: 0;
+    padding: 0 0.5em;
+}
+.mainlogo__social li a {}
+a {
+    color: $rgb-primary;
+}
+@media #{$desktop-window} {
+    .mainlogo {
+        float: none;
+        width: 100%;
+    }
+    .mainlogo__description,
+    .mainlogo__image {
+        float: none;
+        display: inline-block;
+        height: 100%;
+    }
+}

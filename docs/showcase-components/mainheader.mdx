@@ -1,0 +1,24 @@
+---
+hide_title: true
+hide_table_of_contents: true
+---
+
+import { Section, Panel, MainHeader } from '/components/library';
+import { profile } from '/docs/showcase-components/_datasets_.js';
+
+# MainHeader
+
+<code>MainHeader</code> shows a main header.
+
+<Section id="demo-main-header">
+  <MainHeader
+      menu={[
+        { href: "#ABOUT", title: "About" },
+        { href: "#SERVICE", title: "Service" },
+        { href: "#WORK", title: "Work" },
+        { href: "#BLOG", title: "Blog" },
+        { href: "#CONTACT", title: "Contact" },
+      ]}
+      profile={profile}
+  />
+</Section>

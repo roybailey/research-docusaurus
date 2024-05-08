@@ -1,0 +1,41 @@
+---
+hide_table_of_contents: true
+---
+
+import { Section, Panel, ShoutOutPanel } from '/components/library';
+import { solutions } from '/docs/showcase-components/_datasets_.js';
+
+# ShoutOutPanel
+
+<code>ShoutOutPanel</code> quotes and highlights specific text.
+
+<ShoutOutPanel quote={`
+ This text is quoted with the ShoutOutPanel.
+ The text is quoted and placed in a box
+ with highlight bar on the left and top right corner.
+`}/>
+
+<div className="panel about">
+  <p>
+    Aliquip placeat salvia cillum iphone.
+    Seitan aliquip quis cardigan american apparel,
+    butcher voluptate nisi qui. Raw denim you probably
+    haven't heard of them jean shorts Austin.
+  </p>
+  <ShoutOutPanel quote={`
+     This text is quoted with the <code>quote</code> class style.
+     The text is placed in a box with a highlight bar on the right side.
+  `} display="normal" animate="animate__lightSpeedInLeft"/>
+  <p>
+    Aliquip placeat salvia cillum iphone.
+    Seitan aliquip quis cardigan american apparel,
+    butcher voluptate nisi qui. Raw denim you probably
+    haven't heard of them jean shorts Austin.
+  </p>
+</div>
+
+<ShoutOutPanel quote={`
+ This text is quoted with the ShoutOutPanel.
+ The text is quoted and placed in a box
+ with highlight bar on the left and top right corner.
+`}/>

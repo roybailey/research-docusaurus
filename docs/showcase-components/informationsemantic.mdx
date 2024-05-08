@@ -1,0 +1,19 @@
+---
+hide_table_of_contents: true
+---
+
+import { Section, Panel, InformationSemantic, BarChartRating } from '/components/library';
+import { information, ratings } from '/docs/showcase-components/_datasets_.js';
+
+# InformationSemantic
+
+<code>InformationSemantic</code> shows accordion of information (semantic).
+
+<div className="row">
+    <div className="col col--4">
+        <InformationSemantic information={ information } />
+    </div>
+    <div className="col col--8">
+        <BarChartRating dataset={ ratings } />
+    </div>
+</div>
