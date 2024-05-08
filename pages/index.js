@@ -20,7 +20,7 @@ function HomepageHeader() {
           <Link
             className="button button--secondary button--lg"
             to="/showcase">
-            Career Timeline ⏱️
+            Page Composition Example
           </Link>
         </div>
       </div>
