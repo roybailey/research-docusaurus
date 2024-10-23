@@ -5,6 +5,7 @@
 // See: https://docusaurus.io/docs/api/docusaurus-config
 
 import {themes as prismThemes} from 'prism-react-renderer';
+import tailwindPlugin from './plugins/tailwind-config.cjs'; // add this
 
 const baseUrl = process.env.IS_LOCAL ? '/Users/roybailey/Coding/github/research-docusaurus/build/' : '/research-docusaurus/';
 
@@ -170,7 +171,10 @@ const config = {
         },
       }),
 
-  plugins: ['docusaurus-plugin-sass'],
+  plugins: [
+      'docusaurus-plugin-sass',
+      tailwindPlugin
+  ],
 };
 
 export default config;

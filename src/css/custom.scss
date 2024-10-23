@@ -3,6 +3,9 @@
  *        customCss: ['./src/css/custom.scss'],
  *      },
  */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 /* media breakpoints */
 $desktop-window: "only screen and (max-width: 960px)";

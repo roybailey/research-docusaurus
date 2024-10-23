@@ -3,7 +3,7 @@
 // SCSS
 // ------------------------------------------------------------
 //
-@import '../common';
+@import '../_common.scss';
 /*
   ------------------------------------------------------------
   BAR CHART RATINGS
@@ -89,6 +89,18 @@
         @include vendor-prefix(transform, scale(1.0));
     }
 }
+.chart_list li .bar .positive {
+    position: relative;
+    z-index: 100;
+    float: left;
+    height: 1em;
+    background-color: darkseagreen;
+    border-right: 1px solid $rgb-background;
+    @include vendor-prefix(animation-name, create-full);
+    @include vendor-prefix(animation-delay, 0s);
+    @include vendor-prefix(animation-duration, 1s);
+    @include vendor-prefix(animation-fill-mode, both);
+}
 .chart_list li .bar .full {
     position: relative;
     z-index: 100;
@@ -101,6 +113,41 @@
     @include vendor-prefix(animation-duration, 1s);
     @include vendor-prefix(animation-fill-mode, both);
 }
+.chart_list li .bar .negative {
+    position: relative;
+    z-index: 100;
+    float: left;
+    height: 1em;
+    background-color: indianred;
+    border-right: 1px solid $rgb-background;
+    @include vendor-prefix(animation-name, create-full);
+    @include vendor-prefix(animation-delay, 0s);
+    @include vendor-prefix(animation-duration, 1s);
+    @include vendor-prefix(animation-fill-mode, both);
+}
+.chart_list li .bar .empty {
+    float: left;
+    height: 1em;
+    background-color: $rgb-secondary;
+    border-right: 1px solid $rgb-primary;
+    @include vendor-prefix(animation-name, create-empty);
+    @include vendor-prefix(animation-delay, 1s);
+    @include vendor-prefix(animation-duration, 1s);
+    @include vendor-prefix(animation-fill-mode, both);
+}
+.skill__title {
+    float: left;
+    opacity: 1;
+    color: $rgb-primary;
+    font-size: 125%;
+    font-weight: 500;
+}
+.skill__description {
+    float: right;
+    opacity: 0.5;
+    color: $rgb-primary-darkest;
+}
+
 @-webkit-keyframes create-empty {
     0% {
         opacity: 0;
@@ -134,26 +181,4 @@
     80% {
         opacity: 0.8;
     }
-}
-.chart_list li .bar .empty {
-    float: left;
-    height: 1em;
-    background-color: $rgb-secondary;
-    border-right: 1px solid $rgb-primary;
-    @include vendor-prefix(animation-name, create-empty);
-    @include vendor-prefix(animation-delay, 1s);
-    @include vendor-prefix(animation-duration, 1s);
-    @include vendor-prefix(animation-fill-mode, both);
-}
-.skill__title {
-    float: left;
-    opacity: 1;
-    color: $rgb-primary;
-    font-size: 125%;
-    font-weight: 500;
-}
-.skill__description {
-    float: right;
-    opacity: 0.5;
-    color: $rgb-primary-darkest;
 }

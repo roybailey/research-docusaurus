@@ -15,7 +15,13 @@ export default (({ dataset }) => {
         </p>
         <div className={styles.bar}>
             {[...Array(rating.length)].map((ignore, barIndex) =>
-              <div key={barIndex} className={(barIndex <= rating.value)? styles.full : styles.empty} style={{width:(100/rating.length)+'%'}}></div>
+              <div key={barIndex}
+                   className={
+                        (barIndex < (rating.positive || 0))? styles.positive :
+                        (barIndex < rating.value && barIndex >= (rating.value-(rating.negative || 0)))? styles.negative :
+                        (barIndex < rating.value)? styles.full : styles.empty
+                    }
+                   style={{width:(100/rating.length)+'%'}}></div>
             )}
         </div>
       </li>
